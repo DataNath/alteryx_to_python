@@ -1,12 +1,12 @@
 # Alteryx <> Python (pandas) Translation
 
-Inspired by the fantastic Alteryx <> SQL resource created by [Dan Farmer](https://www.linkedin.com/in/danjfarmer/)
-To be used with the provided reference file (credit: Dan Farmer)
+Inspired by the fantastic Alteryx <> SQL resource created by [Dan Farmer](https://www.linkedin.com/in/danjfarmer/)  
+To be used with the provided reference file (credit: Dan Farmer)  
 Produced by Nathan Purvis - [Databasyx](https://www.databasyx.com/) co-founder | Data Engineer @ [The Information Lab](https://www.theinformationlab.co.uk/)
 
 #### Contact:
 
-[GitHub](https://github.com/DataNath) | [LinkedIn](https://www.linkedin.com/in/nathan-purvis/) | [Twitter](https://x.com/DataNath) | [Alteryx Community](https://community.alteryx.com/t5/user/viewprofilepage/user-id/307299)
+[GitHub](https://github.com/DataNath) | [LinkedIn](https://www.linkedin.com/in/nathan-purvis/) | [Twitter](https://x.com/DataNath) | [Alteryx Community](https://community.alteryx.com/t5/user/viewprofilepage/user-id/307299)  
 Email: Nathan@databasyx.com
 
 #### What is this?
