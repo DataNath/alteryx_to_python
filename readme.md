@@ -1,7 +1,7 @@
 # Alteryx <> Python (pandas) Translation
 
 Inspired by the fantastic Alteryx <> SQL resource created by [Dan Farmer](https://www.linkedin.com/in/danjfarmer/)  
-To be used with the provided reference file (credit: Dan Farmer)  
+To be used with the provided [reference file](https://github.com/DataNath/alteryx_to_python/blob/main/alteryx_to_python.py) (credit: Dan Farmer)  
 Produced by Nathan Purvis - [Databasyx](https://www.databasyx.com/) co-founder | Data Engineer @ [The Information Lab](https://www.theinformationlab.co.uk/)
 
 #### Contact:
