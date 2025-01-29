@@ -15,7 +15,7 @@ Many users who have predominantly used GUI-based data tools, in this case Altery
 
 <h2>How can I use this locally?</h2>
 
-1. Navigate to the parent directory you want to store the repository to.
+1. Navigate to the parent directory you want to store the repository in.
 2. Clone this repo using `git clone https://github.com/DataNath/alteryx_to_python.git`.
 3. Move into the git directory with `cd alteryx_to_python`.
 4. Here, create a virtual environment using `python -m venv .venv`.
