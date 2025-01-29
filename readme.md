@@ -13,14 +13,15 @@ Email: Nathan@databasyx.com
 
 Many users who have predominantly used GUI-based data tools, in this case Alteryx, may have a business requirement or just generally be keen to explore code-based equivalents. Due to Python's prevalence, particularly with libraries like pandas, this seemed like a useful resource to put together. Thankfully, Dan had already produced a great asset for anyone switching between Alteryx and T-SQL. This repo uses the exact same examples and produces the same outputs.
 
-<h2>How can I use this?</h2>
+<h2>How can I use this locally?</h2>
 
 1. Navigate to the parent directory you want to store the repository to.
 2. Clone this repo using `git clone https://github.com/DataNath/alteryx_to_python.git`.
-3. In the git folder that is created, make a virtual environment with `python -m venv .venv`.
-4. Staying in the git root directory, activate your virtual environment with `.venv\scripts\activate`.
-5. Install pandas using `pip install pandas`.
-6. Run the main script with `python alteryx_to_python.py`.
+3. Move into the git directory with `cd alteryx_to_python`.
+4. Here, create a virtual environment using `python -m venv .venv`.
+5. Staying in the git root directory, activate your virtual environment with `.venv\scripts\activate`.
+6. Install pandas using `pip install pandas`.
+7. Run the main script with `python alteryx_to_python.py`.
 
 Note: Steps 3 & 4 aren't essential but spinning up a virtual environment is usually best practice.
 
