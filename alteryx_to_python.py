@@ -4,11 +4,9 @@ import pandas as pd
 
 # Browse date with criteria (SELECT statement)
 
-# First dataset
+# Browse all the data in the table
 
 sales_data = "data/SalesData.csv"
-
-# Browse all the data in the table
 
 df = pd.read_csv(sales_data)
 
@@ -32,13 +30,11 @@ df3 = df.sort_values(by="Sales", ascending=False).head(2)[["Order", "Customer"]]
 
 print(df3)
 
-# New dataset
+# Browse the unique [Item] values in the table
 
 sales_data_1 = "data/SalesData1.csv"
 
 df = pd.read_csv(sales_data_1)
-
-# Browse the unique [Item] values in the table
 
 df4 = df[["Item"]].drop_duplicates()
 
@@ -241,6 +237,7 @@ print(df29)
 # Join two tables on a key where only the matching rows are returned (INNER JOIN)
 
 df = pd.read_csv(sales_data_1)
+
 stock_data_1 = "data/StockData1.csv"
 
 df30 = pd.read_csv(stock_data_1)
