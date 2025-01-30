@@ -21,7 +21,7 @@ Many users who have predominantly used GUI-based data tools, in this case Altery
 >
 ![Examples 1-4](.docs/1_1.png)
 
-```
+```python
 # Browse all the data in the table
 
 sales_data = "data/SalesData.csv"
@@ -51,7 +51,7 @@ print(df3)
 
 ![Examples 5-9](.docs/1_2.png)
 
-```
+```python
 # Browse the unique [Item] values in the table
 
 sales_data_1 = "data/SalesData1.csv"
@@ -95,7 +95,7 @@ print(df8)
 >
 ![Examples 10-11](.docs/2.png)
 
-```
+```python
 # Browse all rows where the [Customer] field contains 'Pu'
 
 df9 = df[df["Customer"].str.contains("Pu")]
@@ -117,7 +117,7 @@ print(df10)
 >
 ![Examples 12-14](.docs/3.png)
 
-```
+```python
 # Browse all rows where the [Item] field is 'Pencil', 'Apple' or 'Orange'
 
 df11 = df[df["Item"].isin(["Pencil", "Apple", "Orange"])]
@@ -151,7 +151,7 @@ print(df14)
 >
 ![Examples 15-16](.docs/4.png)
 
-```
+```python
 # Browse all rows where the [Sales] field is >= 70 and <= 90
 
 df15 = df[df["Sales"].between(70, 90, inclusive="both")]
@@ -175,7 +175,7 @@ print(df16)
 >
 ![Examples 17-22](.docs/5_1.png)
 
-```
+```python
 # Browse the minimum [Sales] value in the table
 
 df = pd.read_csv(sales_data)
@@ -215,7 +215,7 @@ print(df21)
 
 ![Examples 23-27](.docs/5_2.png)
 
-```
+```python
 # Browse the sum of [Sales] values by [Customer]
 
 df22 = df.groupby("Customer")["Sales"].sum().reset_index(name="TotalSales")
@@ -272,7 +272,7 @@ print(df26)
 >
 ![Examples 28-31](.docs/6.png)
 
-```
+```python
 # Browse all 4 fields in the data, aliasing [Order] as 'OID' and [Item] as 'Product'
 
 df = pd.read_csv(sales_data)
@@ -307,7 +307,7 @@ print(df29)
 >
 ![Examples 32-34](.docs/7_1.png)
 
-```
+```python
 # Join two tables on a key where only the matching rows are returned (INNER JOIN)
 
 df = pd.read_csv(sales_data_1)
@@ -334,7 +334,7 @@ print(df33)
 
 ![Examples 35-37](.docs/7_2.png)
 
-```
+```python
 # Join two tables on a key where matched rows, plus all unmatched rows from both tables are returned (FULL OUTER JOIN)
 
 df34 = pd.merge(left=df, right=df30, how="outer", left_on="Item", right_on="StockName")
@@ -376,7 +376,7 @@ print(df38)
 >
 ![Examples 38-40](.docs/8.png)
 
-```
+```python
 # Union the [Item] field from two tables
 
 sales_data_3 = "data/SalesData3.csv"
@@ -424,7 +424,7 @@ print(df46)
 >
 ![Examples 41-43](.docs/9.png)
 
-```
+```python
 # Browse unique [Customer]s from the CustData table which have a [Sales] value of less than 80 in the Sales table (linked by a key field)
 
 customer_data = "data/CustData.csv"
@@ -470,7 +470,7 @@ print(df52)
 >
 ![Examples 44-45](.docs/10_1.png)
 
-```
+```python
 # Create a row in the SalesData table and populate with specific values
 
 df53 = pd.read_csv(sales_data)
@@ -494,7 +494,7 @@ print(df55)
 
 ![Examples 46-48](.docs/10_2.png)
 
-```
+```python
 # Populate the SalesData table with all rows from a second table
 
 master_data = "data/MasterData.csv"
@@ -536,7 +536,7 @@ print(df62)
 >
 ![Examples 49-50](.docs/11.png)
 
-```
+```python
 # Copy into a new table all the rows in SalesData where [Order] > 3
 
 df63 = df53[df53["Order"] > 3]
@@ -558,7 +558,7 @@ print(df64)
 >
 ![Examples 51-54](.docs/12.png)
 
-```
+```python
 # Update the [Item] field in the SalesData table to a single value
 
 df65 = df53.copy()
@@ -608,7 +608,7 @@ print(df70)
 >
 ![Examples 55-57](.docs/13.png)
 
-```
+```python
 # Delete all rows from the SalesData table where [Order] = 1
 
 df71 = df53[df53["Order"] != 1]
@@ -636,7 +636,7 @@ print(df73)
 >
 ![Examples 58-60](.docs/14_1.png)
 
-```
+```python
 # Add a column with the average [Salary] for the employee's department
 
 employee_data = "data/EmployeeData.csv"
@@ -673,7 +673,7 @@ print(df77)
 
 ![Examples 61-63](.docs/14_2.png)
 
-```
+```python
 # Add a column of the sum of the [Sales] in the current previous 2 rows, ordered by [Year] ascending, restarting for each department
 
 sales_data_10 = "data/SalesData10.csv"
