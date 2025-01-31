@@ -729,6 +729,8 @@ print(df81)
 2. Clone this repo using `git clone https://github.com/DataNath/alteryx_to_python.git`.
 3. Move into the git directory with `cd alteryx_to_python`.
 4. Here, create a virtual environment using `python -m venv .venv`.
+    - You'll need to do this whenever you want to activate the venv and run this script.
+    - To exit out of your virtual environment, simply type `deactivate` in your terminal.
 5. Staying in the git root directory, activate your virtual environment with `.venv\scripts\activate`.
 6. Install pandas using `pip install pandas`.
 7. Run the main script with `python alteryx_to_python.py`.
