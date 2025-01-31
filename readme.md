@@ -731,9 +731,9 @@ print(df81)
 4. Here, create a virtual environment using `python -m venv .venv`.
 5. Staying in the git root directory, activate your virtual environment with `.venv\scripts\activate`.
 6. Install pandas using `pip install pandas`.
-7. Run the main script with `py alteryx_to_python.py`.
+7. Run the main script with `python alteryx_to_python.py`.
 
-Note: Steps 3 & 4 aren't essential but spinning up a virtual environment is usually best practice.
+Note: Steps 4 & 5 aren't absolutely essential, but spinning up a virtual environment is usually best practice.
 
 <h2>Issues</h2>
 
