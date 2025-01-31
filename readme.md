@@ -173,7 +173,7 @@ print(df16)
 <summary><strong style="font-size: 24px;";>Aggregations:</strong></summary>
 
 >
-![Examples 17-22](.docs/5_1.png)
+![Examples 17-21](.docs/5_1.png)
 
 ```python
 # Browse the minimum [Sales] value in the table
@@ -213,7 +213,7 @@ df21 = pd.DataFrame([{"Avg_Sales": df["Sales"].mean(), "Sum_Sales": df["Sales"].
 print(df21)
 ```
 
-![Examples 23-27](.docs/5_2.png)
+![Examples 22-26](.docs/5_2.png)
 
 ```python
 # Browse the sum of [Sales] values by [Customer]
@@ -270,7 +270,7 @@ print(df26)
 <summary><strong style="font-size: 24px;";>Aliasing fields (using the AS command):</strong></summary>
 
 >
-![Examples 28-31](.docs/6.png)
+![Examples 27-30](.docs/6.png)
 
 ```python
 # Browse all 4 fields in the data, aliasing [Order] as 'OID' and [Item] as 'Product'
@@ -305,7 +305,7 @@ print(df29)
 <summary><strong style="font-size: 24px;";>Joining two tables together (JOIN):</strong></summary>
 
 >
-![Examples 32-34](.docs/7_1.png)
+![Examples 31-33](.docs/7_1.png)
 
 ```python
 # Join two tables on a key where only the matching rows are returned (INNER JOIN)
@@ -332,7 +332,7 @@ df33 = pd.merge(left=df, right=df30, how="right", left_on="Item", right_on="Stoc
 print(df33)
 ```
 
-![Examples 35-37](.docs/7_2.png)
+![Examples 34-36](.docs/7_2.png)
 
 ```python
 # Join two tables on a key where matched rows, plus all unmatched rows from both tables are returned (FULL OUTER JOIN)
@@ -374,7 +374,7 @@ print(df38)
 <summary><strong style="font-size: 24px;";>Unioning multiple tables together (UNION and UNION ALL):</strong></summary>
 
 >
-![Examples 38-40](.docs/8.png)
+![Examples 37-39](.docs/8.png)
 
 ```python
 # Union the [Item] field from two tables
@@ -422,7 +422,7 @@ print(df46)
 <summary><strong style="font-size: 24px;";>Comparing values against data in another table (WHERE EXISTS, ANY and ALL):</strong></summary>
 
 >
-![Examples 41-43](.docs/9.png)
+![Examples 40-42](.docs/9.png)
 
 ```python
 # Browse unique [Customer]s from the CustData table which have a [Sales] value of less than 80 in the Sales table (linked by a key field)
@@ -468,7 +468,7 @@ print(df52)
 <summary><strong style="font-size: 24px;";>Add rows into an existing table (INSERT INTO):</strong></summary>
 
 >
-![Examples 44-45](.docs/10_1.png)
+![Examples 43-44](.docs/10_1.png)
 
 ```python
 # Create a row in the SalesData table and populate with specific values
@@ -492,7 +492,7 @@ df55 = pd.concat([df53, new_data_1])
 print(df55)
 ```
 
-![Examples 46-48](.docs/10_2.png)
+![Examples 45-47](.docs/10_2.png)
 
 ```python
 # Populate the SalesData table with all rows from a second table
@@ -534,7 +534,7 @@ print(df62)
 <summary><strong style="font-size: 24px;";>Create a new table from values in an existing table (SELECTING INTO):</strong></summary>
 
 >
-![Examples 49-50](.docs/11.png)
+![Examples 48-49](.docs/11.png)
 
 ```python
 # Copy into a new table all the rows in SalesData where [Order] > 3
@@ -556,7 +556,7 @@ print(df64)
 <summary><strong style="font-size: 24px;";>Update values in a table (UPDATE):</strong></summary>
 
 >
-![Examples 51-54](.docs/12.png)
+![Examples 50-53](.docs/12.png)
 
 ```python
 # Update the [Item] field in the SalesData table to a single value
@@ -606,7 +606,7 @@ print(df70)
 <summary><strong style="font-size: 24px;";>DELETE:</strong></summary>
 
 >
-![Examples 55-57](.docs/13.png)
+![Examples 54-56](.docs/13.png)
 
 ```python
 # Delete all rows from the SalesData table where [Order] = 1
@@ -634,7 +634,7 @@ print(df73)
 <summary><strong style="font-size: 24px;";>Window Calculations:</strong></summary>
 
 >
-![Examples 58-60](.docs/14_1.png)
+![Examples 57-59](.docs/14_1.png)
 
 ```python
 # Add a column with the average [Salary] for the employee's department
@@ -671,7 +671,7 @@ df77 = df77[["Rank", "Department", "Employee", "Salary"]].sort_values(
 print(df77)
 ```
 
-![Examples 61-63](.docs/14_2.png)
+![Examples 60-62](.docs/14_2.png)
 
 ```python
 # Add a column of the sum of the [Sales] in the current previous 2 rows, ordered by [Year] ascending, restarting for each department
